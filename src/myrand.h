@@ -73,8 +73,8 @@ private:
   const float TO_FLOAT = 1.0f / MYRAND_MAX;
   const float TO_FLOAT_2 = 2.0f / MYRAND_MAX;
 
-  const MYRAND_TYPE a = 1664525UL ;
-  const MYRAND_TYPE c = 1013904223UL;
+  const MYRAND_TYPE _a = 1664525UL ;
+  const MYRAND_TYPE _c = 1013904223UL;
   
   MYRAND_TYPE _myRandomState = 1664525UL ;
 
