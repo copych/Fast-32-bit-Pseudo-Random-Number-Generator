@@ -1,6 +1,19 @@
-/*
+/**
    FAST Pseudo-random generator
+
+* ESP32 performance benchmark
+Float Random 	      49.442230 MOP/S   	CPI=1.048779        // XORSHIFT
+Float Random 	      62.403713 MOP/S   	CPI=1.088256        // LFSR
+Float Random 	      84.615791 MOP/S   	CPI=1.079679        // CONGRUENT
+* compare
+Integer Addition 	   237.953598 MOP/S   	CPI=1.007862
+Integer Multiply 	   237.882843 MOP/S   	CPI=1.008086
+Integer Division 	   119.087494 MOP/S   	CPI=2.012431
+Float Addition  	   237.865158 MOP/S   	CPI=1.008107
+Float Multiply  	   237.882843 MOP/S   	CPI=1.008095
+Float Division 	     4.732930 MOP/S     CPI=1.442258
 */
+
 #define XORSHIFT 1
 #define LFSR 2
 #define CONGRUENT 3
