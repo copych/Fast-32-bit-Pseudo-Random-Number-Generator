@@ -1,8 +1,9 @@
 /*
    FAST Pseudo-random generator
 */
-
- 
+#define XORSHIFT 1
+#define LFSR 2
+#define CONGRUENT 3
 
 #define MYRAND_ALGO XORSHIFT
 //#define MYRAND_ALGO LFSR
